@@ -1,9 +1,15 @@
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './Components/Navbar';
+import Home from './Pages/Home';
 import './App.css';
 
 function App() {
   return (
     <>
-      This News24 where you can find the latest news and articles from the world of news.
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </>
   );
 }
